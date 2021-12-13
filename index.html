@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>FichBook</title>
+   <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+   
+
+   <nav id="nav">
+
+      <div class="nav1">
+
+      </div>
+
+      <div class="nav2">
+
+         <img src="img/logo3.png" alt="logo" height="120px">
+
+         <i class="fas fa-cloud-upload-alt"></i>
+         <i class="fas fa-heart"></i>
+         <i class="fas fa-cart-plus"></i>
+
+
+   </nav>
+
+   <hr>
+<header>
+
+  <div class="top">
+      <h3>Book Details</h3>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <form action=""id="form" action="/" method="get" autocomplete="off">
+
+      
+
+
+     <!-- --------------------  Language------------------- -->
+
+   <div class="card1">
+         <h2 id="h22">Language</h2>
+         
+         <div id="error-Title"><h4 id="errorr1"></h4></div>
+
+         <select id="language" >
+            <option value=""> select </option>
+             <option value="English">English</option>
+             <option value="Arabic">Français</option>
+             <option value="Frensh">Arabe</option>
+         </select>
+   </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- --------------------  Book Title ------------------- -->
+
+   <div class="card2">
+      <h2 id="h22">Book Title</h2>
+     
+
+      <h4 id="errorr2"></h4>
+
+      <input id="Book-Title" type="text">
+      
+      
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- --------------------  Author ------------------- -->
+
+
+   <div class="card3">
+      <h2 id="h22">Author</h2>
+     
+
+         <div id="error-Title"><h4 id="errorr3"></h4></div>
+      <input type="text" id="Author">
+   </div>
+
+    <!-- --------------------  Type ------------------- -->
+
+
+
+
+   <div class="card4">
+      <h2 id="h22">Type of book</h2>
+     
+
+      <div id="error-Title"><h4 id="errorr4"></h4></div>
+
+
+
+
+     
+        <input type="radio" id="Novel" name="fav_language" value="Novel" class="1">
+
+        <label id="txt1" for="Novel" >Novel</label><br>
+
+        <input type="radio" id="Essay" name="fav_language" value="Essay" class="1">
+
+        <label id="txt2" for="Essay">Essay</label><br>
+
+        <input type="radio" id="Comic" name="fav_language" value="Comic" class="1">
+
+        <label  id="txt3" for="Comic">Comic</label>
+
+
+   </div>
+
+
+    <!-- --------------------  price ------------------- -->
+
+   
+   <div class="card5">
+      <h2 id="h22">Price</h2>
+    
+
+<div id="error-Title"><h4 id="errorr5"></h4></div>
+
+      <input type="number" id="price">
+   </div>
+
+
+
+    <!-- --------------------  Description ------------------- -->
+
+   <div class="cards-Description">
+      <h2 id="h22">Description</h2>
+
+      <div id="error-Title"><h4 id="errorr6"></h4></div>
+
+      <textarea id="Description"></textarea>
+
+
+   </div>
+<!-- --------------------  date ------------------- -->
+
+   
+<div class="card8">
+   <h2 id="h22">Date Of Publication</h2>
+   </p>
+
+<div id="error-Title"><h4 id="errorr8"></h4></div>
+
+   <input type="date" id="date">
+</div>
+
+
+    <!-- --------------------  Book Cover  ------------------- -->
+
+   <div class="Cover">
+      <h2 id="h22">Book Cover</h2>
+
+      <div id="error-Title"><h4 id="errorr7"></h4></div>
+
+
+      <input id="avatar"  type="file" name="avatar" accept="image/png, image/jpeg">
+
+   </div>
+
+            <button id="button-submit" type="submit">Submit</button>
+
+
+</form>
+
+   
+
+</header>
+
+
+
+
+<table class="table" id="list">
+      <tr>
+         
+
+         <th id="Cover">Book Cover</th>
+         <th id="Language">Language</th>
+         <th id="Title">Book Title</th>
+         <th id="Author">Author</th>
+         <th id="Type">Type</th>
+         <th id="Price">Price</th>
+         <th id="Price"> Book Description</th>
+         <th id="Date">Book Date</th>
+         <th></th>
+
+
+      </tr>
+</table>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div id="cr">
+   <p>Copyright © 2000-2021 Dreamstime. All rights reserved.</p>
+   </div>
+   
+   
+   
+
+
+
+   <script src="script.js"></script>
+</body>
+</html>

@@ -55,12 +55,12 @@
 
 
 
-   <form action=""id="form" action="/" method="get" autocomplete="off">
+   <form action=""id="form" action="/" method="get" autocomplete="off" onsubmit="onFormSubmit()">
 
       
 
 
-     <!-- --------------------  Language------------------- -->
+     <!-- --------------------  Language ------------------- -->
 
    <div class="card1">
          <h2 id="h22">Language</h2>
@@ -86,13 +86,15 @@
 
     <!-- --------------------  Book Title ------------------- -->
 
+
+
    <div class="card2">
       <h2 id="h22">Book Title</h2>
      
 
       <h4 id="errorr2"></h4>
 
-      <input id="Book-Title" type="text">
+      <input id="BookTitle" type="text">
       
       
    </div>
@@ -216,7 +218,12 @@
 
 
 
-<table class="table" id="list">
+
+
+<table class="tablee" id="listt">
+
+   
+   <thead>
       <tr>
          
 
@@ -232,6 +239,15 @@
 
 
       </tr>
+   </thead>
+
+
+   <tbody>
+
+   </tbody>
+
+
+
 </table>
 
       

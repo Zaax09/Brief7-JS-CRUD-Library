@@ -87,13 +87,16 @@ hr{
            #sp{
                color: #0066c0;
             }
-
+#Editt{
+   background: #34BE82;
+   border: solid 2px #34BE82;
+}
 
             #h22{
                position: absolute;
                margin: 30px 30px;
                font-size: 1.3em;
-               color: #565959;
+               color: #565959;                                    
             }
 
             #pp{
@@ -168,7 +171,8 @@ hr{
                
                margin: 0px 60px;
                height: 150px;
-                width: 70%;
+                width: 90%;
+                margin-left: 10px;
                background: #fff;
                box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.180);
                border-radius: 5px;
@@ -330,7 +334,7 @@ hr{
                width:220px ;
                margin-left: 70%;
                border: none;
-               background: #a37339;
+               background: #e71a51;
                border-radius: 7px;
                font-size: 1.2em;
                color: #fff;
@@ -342,9 +346,22 @@ hr{
            
             #button-submit:hover{
                
-               background: #b98442;
+               background: #EC255A;
                transform: 0.5ms;
             }
+
+
+            button{
+               background: #EC255A;
+               border: none;
+               border: solid 2px #EC255A;
+               width:70px ;
+               height: 30px;
+               color: #fff;
+               border-radius: 20px;
+
+            }
+
 
 
             #errorr1{
@@ -423,23 +440,23 @@ hr{
 
 
 
-body > table{
-   width: 98%;
-   height: 50px;
-   background: #a37339;
-   border-radius: 10px;
-   margin-left: 1%;
-   
-}
 
 table{
    border-collapse: collapse;
-
+   width: 80%;
+   margin-left: 3%;
 }
-
-th{
-   padding-top: 16px;
-   color: #1a1a1a;
+table.list{
+   width:100%;
+   margin-left: 10%;
+}
+td, th {
+   border: 1px solid #292C6D;
+   text-align: left;
+   padding: 8px;
+}
+tr:nth-child(even),table.list thead>tr {
+   background-color: #292C6D;
 }
 
 
@@ -450,12 +467,20 @@ table.list{
    width:90%;
 }
 
+
+tbody tr td{
+   text-align: center;
+   color: #000;
+   font-weight: bold;
+   font-family: sans-serif;
+}
 
 #vv{
    color: #fff;
    padding: 23px;
    font-size: 22px;
 }
+
 
 
 
@@ -563,24 +588,4 @@ table.list{
 
 
 
-                    /* ------------------------------index2 ----------------------------*/
-
-
-                    main{
-                       height: auto;
-                       width: auto;
-                       background: #f8f8f8;
-                       padding: 50px;
-                    }
-
-                    main h1{
-                       padding: 40px;
-                    }
-
-                    #table1{
-                       height: 900px;
-                       width:80%;
-                       background: #c2006b;
-                       margin-left: 135px;
-                       
-                    }
+                    /* ------------------------------tablo ----------------------------*/

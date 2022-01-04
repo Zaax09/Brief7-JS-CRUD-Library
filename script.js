@@ -11,6 +11,7 @@
       const Cover = document.getElementById('avatar')
       const Date = document.getElementById('date')
       var lng=document.getElementById("language")
+      const email = document.getElementById('email')
 
       // errors
 
@@ -22,6 +23,8 @@
       const errorElementDescription = document.getElementById('errorr6')
       const errorElementCover = document.getElementById('errorr7')
       const errorElementDate = document.getElementById('errorr8')
+      const errorElementEmail = document.getElementById('errorr9')
+
 
 
 
@@ -177,6 +180,32 @@
 
 
 
+
+      //  ---------------- email---------
+
+      form.addEventListener("submit", (e) => {
+         //   let messages = [];
+             var  regexEmail= /^[a-z\d.]+@[a-z\d]+.([a-z]{2,8})(.[a-z]{2,8})?$/;
+             if(email.value !=="" )
+                 if(regexEmail.test(email.value)){
+                     errorElementEmail.innerHTML=""
+         
+                 }
+                 else{
+                     errorElementEmail.innerHTML="please enter a correct email form "
+         
+         
+                 }
+                else{
+                     errorElementEmail.innerHTML="This field is not filled out*"
+         
+                     }
+         
+         
+         
+         });
+
+
    
 
    // =======================   date   ==================
@@ -236,9 +265,12 @@ function readFormData()
     formData['BookTitle'] = document.getElementById('BookTitle').value;
     formData['Author'] = document.getElementById('Author').value;
     
-    formData['Types'] = document.getElementsByClassName('Types').value;
+   //  formData['Types'] = document.getElementsByClassName('Types').value;
+    formData['Types'] = document.querySelector('input[name="fav_language"]:checked').value;
+      // console.log(document.querySelector('input[name="fav_language"]:checked').value);
     formData['price'] = document.getElementById('price').value;
     formData['date'] = document.getElementById('date').value;
+    formData['email'] = document.getElementById('email').value;
 
     return formData;
 }
@@ -267,7 +299,10 @@ function insertNewRecord(data)
     cell5.innerHTML = data.price;
     cell6 = newRow.insertCell(5);
     cell6.innerHTML = data.date;
-    cell7 = newRow.insertCell(6);
+
+    cell6 = newRow.insertCell(6);
+    cell6.innerHTML = data.email;
+    cell7 = newRow.insertCell(7);
     cell7.innerHTML = `<button id = 'Editt'  onClick='onEdit(this)'>Edit</button> <button onClick='onDelete(this)'>Delete</button>`
    }
 
@@ -288,6 +323,7 @@ function resetForm()
     document.getElementsByClassName('Types').value = '';
     document.getElementById('price').value = '';
     document.getElementById('date').value = '';
+    document.getElementById('email').value = '';
 
     selectedRow = null;
 }
@@ -302,6 +338,7 @@ function onEdit(td)
     document.getElementsByClassName('Types').value = selectedRow.cells[3].innerHTML;
     document.getElementById('price').value = selectedRow.cells[4].innerHTML;
     document.getElementById('date').value = selectedRow.cells[5].innerHTML;
+    document.getElementById('email').value = selectedRow.cells[5].innerHTML;
 }
 function updateRecord(formData)
 {
@@ -312,6 +349,7 @@ function updateRecord(formData)
     selectedRow.cells[3].innerHTML = formData.Types;
     selectedRow.cells[4].innerHTML = formData.price;
     selectedRow.cells[5].innerHTML = formData.date;
+    selectedRow.cells[6].innerHTML = formData.email;
 }
 function onDelete(td)
 {
@@ -321,3 +359,4 @@ function onDelete(td)
     if(confirm('Are You Sure')){}
 
 }
+

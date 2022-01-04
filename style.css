@@ -112,7 +112,7 @@ hr{
             .card1{
                margin: 0px 60px;
                height: 150px;
-               width: 70%;
+               width: 75%;
                background: #fff;
                box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.180);
                border-radius: 5px;
@@ -130,7 +130,7 @@ hr{
             .card3{
                margin: 0px 60px;
                height: 150px;
-               width: 70%;
+               width: 75%;
                background: #fff;
                box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.180);
                border-radius: 5px;
@@ -150,7 +150,7 @@ hr{
                
                margin: 0px 60px;
                height: 150px;
-               width: 70%;
+               width: 75%;
                background: #fff;
                box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.180);
                border-radius: 5px;
@@ -172,7 +172,7 @@ hr{
                margin: 0px 60px;
                height: 150px;
                 width: 90%;
-                margin-left: 10px;
+                margin-left: -30px;
                background: #fff;
                box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.180);
                border-radius: 5px;
@@ -180,7 +180,42 @@ hr{
 
             }
 
+            
+            .card9{
+               
+               margin: 0px 60px;
+               height: 150px;
+               width: 75%;
+               background: #fff;
+               box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.180);
+               border-radius: 5px;
 
+            }
+
+            #gggg{
+               position: absolute;
+               margin: 30px 30px;
+               font-size: 1.2em;
+               font-weight: bold;
+               color: #565959; 
+
+            }
+
+
+
+
+#email{
+  
+   margin: 0px 60px;
+   height: 40px;
+   border: none;
+   width: 30%;
+   margin-top: 75px;
+   margin-left: 30px;
+   background: #fff;
+   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.180);
+   border-radius: 5px;
+}
 
 
 
@@ -330,9 +365,11 @@ hr{
 
             #button-submit{
 
+               position: absolute;
                height: 50px ;
                width:220px ;
-               margin-left: 70%;
+               margin-left: 850px;
+               margin-top: 1050px;
                border: none;
                background: #e71a51;
                border-radius: 7px;
@@ -437,6 +474,13 @@ hr{
 
 }
 
+.errorr9{
+   position: absolute;
+   color: red;
+   font-weight: bold;
+   margin-left: 30px;
+   margin-top: 61px;
+}
 
 
 
